@@ -14,7 +14,7 @@ function Simulate() {
                 <p className="text-lg w-1/2">Gear up for Simulate, our prestigious annual championship that brings together the best talents in the gaming world.</p>
                 <Button label="Register Now" />
             </div>
-            <div className=" w-full my-64 pt-48 z-0 px-32 flex flex-col md:flex-row gap-10 justify-between items-center">
+            <div className=" w-full mt-8 pt-44 z-0 px-32 flex flex-col md:flex-row gap-10 justify-between items-center">
                 {
                     Array(3).fill(0).map((e,i)=>{
                         return(

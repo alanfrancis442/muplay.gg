@@ -1,15 +1,15 @@
 const Navbar = () => {
     return (
-        <nav className="p-8 bg-transparent absolute top-0 z-10 w-full md:block hidden">
-            <div className="container mx-auto flex justify-between items-center px-20">
-                <div className="text-white text-2xl font-bold capitalize font-[Paladins]">
+        <nav className="px-5 py-6 bg-transparent w-full md:block hidden sticky top-0 z-[99999] backdrop-blur-md">
+            <div className="container mx-auto flex justify-between items-center px-[2vw]">
+                <div className="text-white text-[3vw] font-bold capitalize font-[Paladins]">
                     muplay
                 </div>
-                <div className="space-x-1">
+                <div className="">
                     {
                         ['home', 'updates', 'resources', 'about', 'contact us'].map((item, index) => (
                             <a key={index}
-                            style={{fontWeight: '100', fontSize: '1rem'}}
+                            style={{fontSize: '1.1vw'}}
                             className="text-white hover:font-semibold p-2">{item.toUpperCase()}</a>
                         ))
                     }
