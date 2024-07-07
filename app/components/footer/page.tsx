@@ -39,7 +39,8 @@ return (
             ].map((section, index) => (
                 <div key={index}>
                     <h2 className="font-bold text-lg mb-4 font-[paladins]">{section.title}</h2>
-                    {section.content && <p className="text-sm">{section.content}</p>}
+                    {//@ts-ignore
+                        section.content && <p className="text-sm">{section.content}</p>}
                     {section.links && (
                         <ul className="space-y-2 text-sm">
                             {section.links.map((link, linkIndex) => (
