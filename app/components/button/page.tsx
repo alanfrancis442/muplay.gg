@@ -1,7 +1,9 @@
 'use client'
 import { useState } from "react";
-
-function Button({label}:{label:string}) {
+interface ButtonProps {
+    label: string;
+  }
+function Button({label}:ButtonProps) {
     const [ishover, setishover] = useState(false)
     return ( 
         <button className="relative transition-all" >
