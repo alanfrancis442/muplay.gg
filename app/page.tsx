@@ -10,7 +10,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 export default function Home() {
 
 
-// const locomotiveScroll = new LocomotiveScroll();
+const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <>
