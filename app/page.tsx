@@ -10,18 +10,16 @@ import LocomotiveScroll from 'locomotive-scroll';
 export default function Home() {
 
 
-// const locomotiveScroll = new LocomotiveScroll();
+const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <>
-      <div className="bg-black text-white overflow-hidden">
       <Navbar />
+      <div data-scroll data-scroll-section className="overflow-hidden bg-black text-white absolute top-0">
       <Landing />
-      <div data-scroll data-scroll-section>
         <Question />
         <Simulate />
         <Footer />
-      </div>
       </div>
     </>
   );
