@@ -36,7 +36,7 @@ useGSAP(()=>{
                 <h2 className='f text'>Join the ultimate community for gamers, Developers and <br />eSports enthusiasts </h2>
             </div>
             <div className='text'>
-                <Button  label={'Join Now !'} />
+                <Button url={'https://mulearn.org/'} label={'Join Now !'} />
             </div>
             </div>
             <div className={styles.bgFilter}></div>

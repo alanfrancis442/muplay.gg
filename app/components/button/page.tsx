@@ -3,10 +3,13 @@ import { useState } from "react";
 // interface ButtonProps {
 //     label: string;
 //   }
-function Button({label}:any) {
+function Button({label,url}:any) {
     const [ishover, setishover] = useState(false)
+    const handleClick = () => {
+        window.open(url, "_blank");
+    };
     return ( 
-        <button className="relative transition-all" >
+        <button onClick={handleClick} className="relative transition-all" >
                     {/* <img src={'button_bg.png'} alt="" /> */}
                     <svg xmlns="http://www.w3.org/2000/svg" width="303" height="65" viewBox="0 0 303 65" fill="none">
                     <path d="M277 0.475098H0V43.4118L26.5 64.4751H170.753H303V23.1586L277 0.475098Z"
