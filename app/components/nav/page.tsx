@@ -12,7 +12,7 @@ const Navbar = () => {
                         ['home', 'updates', 'resources', 'about', 'contact us'].map((item, index) => (
                             <a key={index}
                             style={{fontSize: '1.1vw'}}
-                            className="text-white hover:font-semibold p-2">{item.toUpperCase()}</a>
+                            className="text-white p-2 hover:underline underline-offset-2 transition-all">{item.toUpperCase()}</a>
                         ))
                     }
                 </div>
