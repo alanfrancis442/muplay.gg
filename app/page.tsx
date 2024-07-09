@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Image from "next/image";
 import Navbar from "./components/nav/page";
 import Landing from "./components/landing/page";
