@@ -39,7 +39,7 @@ function Simulate() {
                   alt="simulate" height={800} width={800} ></Image>
                 <h1 className="font-[paladins] sm:text-6xl text-4xl">SIMULATE ‘24</h1>
                 <p className="text-lg w-1/2">Gear up for Simulate, our prestigious annual championship that brings together the best talents in the gaming world.</p>
-                <Button label={"Register Now"} />
+                <Button url={'https://mulearn.org/'} label={"Register Now"} />
             </div>
             <div className=" w-full mt-8 py-44 px-32 flex flex-col md:flex-row gap-10 justify-between items-center relative z-50">
                 {

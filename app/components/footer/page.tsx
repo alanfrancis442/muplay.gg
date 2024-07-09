@@ -33,8 +33,8 @@ return (
                 {
                     title: "CONTACT US",
                     contact: [
-                        { label: "Name" },
-                        { label: "+91 69107 890" }
+                        { label: "Mulearn" },
+                        { label: "https://mulearn.org/" }
                     ]
                 }
             ].map((section, index) => (
