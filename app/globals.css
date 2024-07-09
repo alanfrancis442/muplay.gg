@@ -40,3 +40,9 @@
   font-family: 'Paladins';
   src: url('/fonts/paladins.ttf');
 }
+
+
+@font-face {
+  font-family: 'coolvetica';
+  src: url('/fonts/cool.ttf');
+}
