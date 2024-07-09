@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import { useEffect, useRef } from "react";
 import Navbar from "./components/nav/page";
 import Landing from "./components/landing/page";
 import Question from "./components/question/question";
@@ -8,16 +8,26 @@ import Footer from "./components/footer/page";
 import LocomotiveScroll from 'locomotive-scroll';
 
 export default function Home() {
+  const scrollRef = useRef(null);
 
+  useEffect(() => {
+    if (scrollRef.current) {
+      const locomotiveScroll = new LocomotiveScroll({
+        el: scrollRef.current,
+        smooth: true
+      });
 
-// const locomotiveScroll = new LocomotiveScroll();
+      return () => {
+        locomotiveScroll.destroy();
+      };
+    }
+  }, []);
 
   return (
     <>
       <Navbar />
-      {/* <div data-scroll data-scroll-section className="overflow-hidden bg-black text-white absolute top-0"> */}
-      <div className="overflow-hidden bg-black text-white absolute top-0">
-      <Landing />
+      <div ref={scrollRef} className="overflow-hidden bg-black text-white absolute top-0">
+        <Landing />
         <Question />
         <Simulate />
         <Footer />

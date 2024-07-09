@@ -12,19 +12,19 @@ function Simulate() {
     gsap.registerPlugin(ScrollTrigger)
     useGSAP(()=>{
         gsap.fromTo('.controller',{
-            y:50,
+            y:100,
             opacity:0,
-            stagger:0.1
+            stagger:0.5
         },{
             y:0,
-            duration:1,
+            duration:1.5,
             opacity:1,
             stagger:0.5,
-            ease:'power3.inOut',
+            ease:'power1.inOut',
             scrollTrigger:{
                 trigger:container.current,
-                start:'top 50%',
-                end:'52% 80%',
+                start:'top 60%',
+                end:'52% 90%',
                 scrub:true,
                 // markers:true
             }
