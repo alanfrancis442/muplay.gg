@@ -19,7 +19,11 @@ function Simulate() {
             y:0,
             duration:1.5,
             opacity:1,
-            stagger:0.5,
+            stagger:{
+                each:0.5,
+                from:'start',
+                ease:'power1.inOut'
+            },
             ease:'power1.inOut',
             scrollTrigger:{
                 trigger:container.current,

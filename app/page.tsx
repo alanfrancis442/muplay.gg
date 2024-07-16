@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import Navbar from "./components/nav/page";
 import Landing from "./components/landing/page";
 import Question from "./components/question/question";
@@ -7,21 +7,22 @@ import Simulate from "./components/simulation/page";
 import Footer from "./components/footer/page";
 
 export default function Home() {
-  const scrollRef = useRef(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
   const [isClient, setIsClient] = useState(false);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setIsClient(true); // Component has mounted, we are now client-side
     if (scrollRef.current && isClient) {
       import('locomotive-scroll').then(LocomotiveScrollModule => {
         const LocomotiveScroll = LocomotiveScrollModule.default;
         const locomotiveScroll = new LocomotiveScroll({
           el: scrollRef.current,
-          smooth: true
+          smooth: true,
+          lerp: 0.02,
         });
 
         return () => {
-          locomotiveScroll.destroy();
+          if (locomotiveScroll) locomotiveScroll.destroy();
         };
       });
     }
@@ -30,7 +31,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div ref={scrollRef} className="overflow-hidden bg-black text-white absolute top-0">
+      <div data-scroll data-scroll-container ref={scrollRef} className="overflow-hidden bg-black text-white absolute top-0">
         <Landing />
         <Question />
         <Simulate />

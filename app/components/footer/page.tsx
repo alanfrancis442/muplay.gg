@@ -1,5 +1,15 @@
 'use client';
 import React from 'react';
+import { FaInstagram } from "react-icons/fa";
+import { FaTwitch } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+
+
+interface linktypes{
+    label:string;
+    href:string;
+    icon?:any;
+}
 
 const Footer = () => {
 return (
@@ -24,10 +34,9 @@ return (
                 {
                     title: "SOCIALS",
                     links: [
-                        { label: "Instagram", href: "https://www.instagram.com/muplay.gg/?locale=dehttps%3A%2F%2F555ten.com%2F" },
-                        { label: "LinkedIn", href: "#linkedin" },
-                        { label: "Youtube", href: "#youtube" },
-                        { label: "Twitter/X", href: "#twitter" }
+                        { label: "Instagram", href: "https://www.instagram.com/muplay.gg/",icon:<FaInstagram /> },
+                        { label: "Youtube", href: "https://www.youtube.com/@muplay-gg",icon:<FaYoutube /> },
+                        { label: "Twitch", href: "https://www.twitch.tv/muplay_gg ",icon:<FaTwitch />}
                     ]
                 },
                 {
@@ -44,9 +53,9 @@ return (
                         section.content && <p className="text-sm">{section.content}</p>}
                     {section.links && (
                         <ul className="space-y-2 text-sm">
-                            {section.links.map((link, linkIndex) => (
+                            {section.links.map((link:linktypes, linkIndex:number) => (
                                 <li key={linkIndex}>
-                                    <a href={link.href} className="hover:underline">{link.label}</a>
+                                    <a href={link.href} className="hover:underline flex items-center gap-1">{link.icon}{link.label}</a>
                                 </li>
                             ))}
                         </ul>

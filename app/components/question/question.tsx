@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
-import { motion, useAnimation, useInView } from "framer-motion";
+import { delay, motion, useAnimation, useInView } from "framer-motion";
 import styles from "./style.module.css";
 
 function Question() {
@@ -19,7 +19,7 @@ function Question() {
 
   const animationVariants = {
     hidden: { y: 50, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 1, staggerChildren: 0.5, ease: "easeInOut" } },
+    visible: { y: 0, opacity: 1, transition: { duration: 1, delay:0.1, staggerChildren: 0.5, ease: "easeInOut" } },
   };
 
   const data = [
