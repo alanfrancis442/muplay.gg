@@ -2,7 +2,7 @@ const Navbar = () => {
     return (
         <nav className="p-4 bg-transparent w-full md:block hidden sticky top-0 z-[99999] backdrop-blur-md">
             <div className="container mx-auto flex justify-between items-center px-[2vw]">
-                <div className="text-white text-[3vw] font-bold  font-[Paladins]">
+                <div className="text-white text-[3vw] font-bold  font-paladins">
                     MUPLAY<span style={{
                         fontFamily: "arial",
                     }}>.gg</span>

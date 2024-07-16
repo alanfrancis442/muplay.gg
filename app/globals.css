@@ -36,10 +36,10 @@
   
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Paladins';
   src: url('/fonts/paladins.ttf');
-}
+} */
 
 
 @font-face {
@@ -59,8 +59,4 @@
   background-color: rgba(226, 13, 74, 1);
   border-radius: 0.5rem;
   border: 3px solid rgba(226, 13, 74, 1);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--tertiary);
 }

@@ -30,9 +30,9 @@ useGSAP(()=>{
             src={'/landing_video.mp4'}></video>
             <div className={'absolute top-1/2 left-12 sm:left-24 flex justify-center items-start gap-3 flex-col '}>
             <div>
-                <h1 className='font-[paladins] text-5xl text'>compete</h1>
-                <h1 className='font-[paladins] text-5xl text'>connect</h1>
-                <h1 className='font-[paladins] text-5xl text'>create</h1>
+                <h1 className='font-paladins text-5xl text'>compete</h1>
+                <h1 className='font-paladins text-5xl text'>connect</h1>
+                <h1 className='font-paladins text-5xl text'>create</h1>
                 <h2 className='f text'>Join the ultimate community for gamers, Developers and <br />eSports enthusiasts </h2>
             </div>
             <div className='text'>

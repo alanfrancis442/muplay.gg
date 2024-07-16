@@ -17,7 +17,7 @@ function Simulate() {
                 trigger: container.current,
                 start: 'top 50%',
                 end: '50% 70%',
-                scrub: true,
+                scrub: 1,
                 // markers: true,
                 pin: true, // Assuming you want the pinning effect for the whole timeline
             }
@@ -61,7 +61,7 @@ function Simulate() {
                 <Image src="/simulate/Console_l.png" className="controller absolute -z-10 left-[-45%]" alt="simulate" height={1000} width={1000} ></Image>
                 <Image src="/simulate/Console_r.png" className="controller absolute right-[-45%] -z-10 md:scale-[1.5] sm:scale-[1.2]"
                   alt="simulate" height={800} width={800} ></Image>
-                <h1 className="main-content font-[paladins] sm:text-6xl text-4xl">SIMULATE ‘24</h1>
+                <h1 className="main-content font-paladins sm:text-6xl text-4xl">SIMULATE ‘24</h1>
                 <p className="main-content text-lg w-1/2">Gear up for Simulate, our prestigious annual championship that brings together the best talents in the gaming world.</p>
                 <div className="main-content">
                     <Button url={'https://mulearn.org/'} label={"Join Now !"} />

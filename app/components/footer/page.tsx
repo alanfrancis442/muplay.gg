@@ -17,7 +17,7 @@ return (
      md:flex-row md:gap-32 md:py-10
       ">
         <div className='flex flex-col gap-4 md:gap:5'>
-            <h1 className="text-2xl font-bold font-[paladins]">Muplay</h1>
+            <h1 className="text-2xl font-bold font-paladins">Muplay</h1>
             <p className="text-sm w-3/4">muPlay is a platform for gamers, developers and eSports enthusiasts to connect, compete and create.</p>
         </div>
         <div className="flex md:gap-20 flex-col md:flex-row gap-4 md:gap:5">
@@ -48,7 +48,7 @@ return (
                 }
             ].map((section, index) => (
                 <div key={index}>
-                    <h2 className="font-bold text-lg mb-4 font-[paladins]">{section.title}</h2>
+                    <h2 className="font-bold text-lg mb-4 font-paladins">{section.title}</h2>
                     {//@ts-ignore
                         section.content && <p className="text-sm">{section.content}</p>}
                     {section.links && (
