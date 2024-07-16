@@ -18,7 +18,10 @@ useGSAP(()=>{
         y:0,
         duration:1,
         opacity:1,
-        stagger:0.5,
+        stagger:{
+            each:0.2,
+            from:'start'
+        },
         ease:'power3.inOut'
     })
 }, {scope:container})

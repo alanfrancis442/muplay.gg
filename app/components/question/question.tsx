@@ -53,9 +53,9 @@ function Question() {
       },
       scrollTrigger:{
         trigger: cardContainerRef.current,
-        start: 'top 50%',
-        end: '80% 50%',
-        scrub: 1,
+        start: 'top 80%',
+        end: '80% 80%',
+        scrub: 2.5,
         // markers: true,
         // pin: true, // Assuming you want the pinning effect for the whole timeline
       }

@@ -9,6 +9,7 @@ import { useRef } from "react";
 function Simulate() {
 
     const container = useRef(null);
+    const cardContainerRef = useRef(null);
     gsap.registerPlugin(ScrollTrigger);
     
     useGSAP(() => {
@@ -17,7 +18,7 @@ function Simulate() {
                 trigger: container.current,
                 start: 'top 50%',
                 end: '50% 70%',
-                scrub: 1,
+                scrub: 2,
                 // markers: true,
                 pin: true, // Assuming you want the pinning effect for the whole timeline
             }
@@ -52,7 +53,27 @@ function Simulate() {
             },
             ease: 'power1.inOut',
         }); // Use relative position to start the second animation at the same time as the first
-    
+        
+        gsap.to('.char-card',{
+            y: 0,
+            duration: 2.5,
+            opacity: 1,
+            ease: 'power1.inOut',
+            stagger: {
+                each: 0.5,
+                from: 'start',
+                ease: 'power3.inOut'
+            },
+            scrollTrigger:{
+                trigger: cardContainerRef.current,
+                start: '10% 80%',
+                end: '80% 80%',
+                scrub: 2.5,
+                // markers: true,
+                // pin: true, // Assuming you want the pinning effect for the whole timeline
+            }
+        }); 
+
     }, { scope: container });
     
     return ( 
@@ -67,13 +88,13 @@ function Simulate() {
                     <Button url={'https://mulearn.org/'} label={"Join Now !"} />
                 </div>
             </div>
-            <div className=" w-full mt-8 py-44 px-32 flex flex-col md:flex-row gap-10 justify-between items-center relative z-50">
+            <div ref={cardContainerRef} className=" w-full mt-8 py-44 px-32 flex flex-col md:flex-row gap-10 justify-between items-center relative z-50">
                 {
                     Array(3).fill(0).map((e,i)=>{
                         return(
-                            <div key={i} className="relative group ">
-                                <Image src={`/simulate/card${i+1}.png`} className="absolute bottom-0 z-10" alt="simulate" height={500} width={500} ></Image>
-                                <Image src={`/simulate/char${i+1}.svg`} className="transition-transform duration-300 transform group-hover:scale-105" alt="simulate" height={300} width={300} ></Image>
+                            <div key={i} className="relative group char-card opacity-0 translate-y-[100%]">
+                                <Image src={`/simulate/card${i+1}.png`} className="card absolute bottom-0 z-10" alt="simulate" height={500} width={500} ></Image>
+                                <Image src={`/simulate/char${i+1}.svg`} className="char transition-transform duration-300 transform group-hover:scale-105" alt="simulate" height={300} width={300} ></Image>
                             </div>
                         )
                     })

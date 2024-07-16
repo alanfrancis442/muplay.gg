@@ -3,7 +3,7 @@ import React from 'react';
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitch } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-
+import { FaDiscord } from "react-icons/fa";
 
 interface linktypes{
     label:string;
@@ -36,7 +36,8 @@ return (
                     links: [
                         { label: "Instagram", href: "https://www.instagram.com/muplay.gg/",icon:<FaInstagram /> },
                         { label: "Youtube", href: "https://www.youtube.com/@muplay-gg",icon:<FaYoutube /> },
-                        { label: "Twitch", href: "https://www.twitch.tv/muplay_gg ",icon:<FaTwitch />}
+                        { label: "Twitch", href: "https://www.twitch.tv/muplay_gg",icon:<FaTwitch />},
+                        { label: "Discord", href: "https://discord.com/invite/gtech-mulearn-771670169691881483",icon:<FaDiscord />}
                     ]
                 },
                 {
