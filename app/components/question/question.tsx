@@ -106,7 +106,7 @@ function Question() {
       ref={cardContainerRef}
         className="flex justify-between items-center flex-col md:flex-row gap-10 w-full grop">
           {data.map((e, i) => (
-            <QuestionCard key={i} index={i} content={e} />
+            <QuestionCard key={i} index={i} content={e} ></QuestionCard>
           ))}
         </div>
       </div>

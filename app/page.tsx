@@ -20,6 +20,14 @@ export default function Home() {
           smooth: true,
           lerp: 0.02,
         });
+        setTimeout(() => {
+          try{
+            locomotiveScroll.update();
+          }
+          catch(e){
+            console.error(e);
+          }
+        }, 5000);
 
         return () => {
           if (locomotiveScroll) locomotiveScroll.destroy();
