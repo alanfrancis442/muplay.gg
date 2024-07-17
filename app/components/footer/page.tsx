@@ -56,7 +56,7 @@ return (
                         <ul className="space-y-2 text-sm">
                             {section.links.map((link:linktypes, linkIndex:number) => (
                                 <li key={linkIndex}>
-                                    <a href={link.href} className="hover:underline flex items-center gap-1">{link.icon}{link.label}</a>
+                                    <a href={link.href} target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">{link.icon}{link.label}</a>
                                 </li>
                             ))}
                         </ul>
