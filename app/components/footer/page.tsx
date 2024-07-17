@@ -13,7 +13,7 @@ interface linktypes{
 
 const Footer = () => {
 return (
-    <footer className=" text-white px-5 sm:px-20 py-8 flex justify-between w-full flex-col
+    <footer id='contact us' className=" text-white px-5 sm:px-20 py-8 flex justify-between w-full flex-col
      md:flex-row md:gap-32 md:py-10
       ">
         <div className='flex flex-col gap-4 md:gap:5'>

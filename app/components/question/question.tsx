@@ -83,13 +83,6 @@ function Question() {
     "Participate in tournaments, showcase your skills, and connect with gamers",
   ];
 
-  const context = `Muplay is the premier gaming club established by μLearn and Tiltlab,
-          is dedicated to uniting and empowering the gaming community. Our
-          platform is structured into three dynamic verticals: Game Development,
-          Gamers, and Esports. Whether you're an aspiring game developer, a
-          passionate gamer, or an esports enthusiast, Muplay is designed to help
-          you connect, grow, and thrive in the gaming universe.`;
-
   const createWordDivs = (text) => {
     return text.split(" ").map((word, index) => (
       <div style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }} className="inline-block px-1 py-1" key={index}>
@@ -135,7 +128,7 @@ function Question() {
   };
 
   return (
-    <div ref={container}
+    <div id="about" ref={container}
       className="flex flex-col justify-center items-center min-h-screen gap-56 py-32 sm:py-56 sm:pt-40 bg-black"
     >
       <div className="flex flex-col items-center justify-center w-[90%] sm:w-[55%] gap-4 text-center">
@@ -145,7 +138,9 @@ function Question() {
           </h1>
         </div>
         <div className={`ani-content text-lg py-4 overflow-hidden ${styles.cliptext}`}>
-          <p>{context}</p>
+          <p>
+          μPlay.gg is a premier gaming club established by <b>μLearn</b> and <b>TILTLABS</b>, dedicated to uniting and empowering the gaming community. Our platform is structured into three dynamic verticals: Game Development, Gamers, and Esports, where you can connect, grow, and thrive in the gaming universe.
+          </p>
         </div>
       </div>
       <div className="flex flex-col items-center justify-center w-3/4 gap-4 text-center">

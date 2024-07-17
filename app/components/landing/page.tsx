@@ -26,7 +26,7 @@ useGSAP(()=>{
     })
 }, {scope:container})
     return ( 
-        <div ref={container} className={`${styles.main} overflow-hidden relative`}>
+        <div id='home' ref={container} className={`${styles.main} overflow-hidden relative`}>
             {/* <Image src="/landing/landing_cover.png" alt="landing" layout="fill" objectFit="cover" /> */}
             <video className='sm:h-full sm:w-full h-screen object-cover'
             muted={true} autoPlay={true} loop={true}

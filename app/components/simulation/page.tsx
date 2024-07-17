@@ -77,7 +77,7 @@ function Simulate() {
     }, { scope: container });
     
     return ( 
-        <div ref={container} className="flex flex-col justify-center items-center text-center">
+        <div id="updates" ref={container} className="flex flex-col justify-center items-center text-center">
             <div className="flex flex-col justify-center items-center gap-5 z-10 relative">
                 <Image src="/simulate/Console_l.png" className="controller absolute -z-10 left-[-45%]" alt="simulate" height={1000} width={1000} ></Image>
                 <Image src="/simulate/Console_r.png" className="controller absolute right-[-45%] -z-10 md:scale-[1.5] sm:scale-[1.2]"
