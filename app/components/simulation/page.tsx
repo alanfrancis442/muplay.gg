@@ -83,7 +83,7 @@ function Simulate() {
                 <Image src="/simulate/Console_r.png" className="controller absolute right-[-45%] -z-10 md:scale-[1.5] sm:scale-[1.2]"
                   alt="simulate" height={800} width={800} ></Image>
                 <h1 className="main-content font-paladins sm:text-6xl text-4xl">SIMULATE ‘24</h1>
-                <p className="main-content text-lg w-1/2">Gear up for Simulate, our prestigious annual championship that brings together the best talents in the gaming world.</p>
+                <p className="main-content text-lg w-1/2">Gear up for Simulate, our prestigious annual eSports championship that brings together the best talents in the gaming world.</p>
                 <div className="main-content">
                     <Button url={'https://mulearn.org/'} label={"Join Now !"} />
                 </div>

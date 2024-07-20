@@ -18,7 +18,7 @@ return (
       ">
         <div className='flex flex-col gap-4 md:gap:5'>
             <h1 className="text-2xl font-bold font-paladins">Muplay</h1>
-            <p className="text-sm w-3/4">muPlay is a platform for gamers, developers and eSports enthusiasts to connect, compete and create.</p>
+            <p className="text-sm w-3/4">muPlay is a platform for Gamers, Game developers and eSports enthusiasts to connect, compete and create.</p>
         </div>
         <div className="flex md:gap-20 flex-col md:flex-row gap-4 md:gap:5">
             {[

@@ -78,8 +78,8 @@ function Question() {
   // };
 
   const data = [
-    "“Register and create your account on the μPlay.gg platform.”",
-    "Discover the realms of game development, esports, and gaming.",
+    "“Register and create an account in µlearn platform”",
+    "Join our Discord server and discover the realms of Game development, eSports, and Gaming. ",
     "Participate in tournaments, showcase your skills, and connect with gamers",
   ];
 
@@ -139,7 +139,7 @@ function Question() {
         </div>
         <div className={`ani-content text-lg py-4 overflow-hidden ${styles.cliptext}`}>
           <p>
-          μPlay.gg is a premier gaming club established by <b>μLearn</b> and <b>TILTLABS</b>, dedicated to uniting and empowering the gaming community. Our platform is structured into three dynamic verticals: Game Development, Gamers, and Esports, where you can connect, grow, and thrive in the gaming universe.
+          muPlay.gg is a premier gaming club established by <b>μLearn</b> and <b>TILTLABS</b>, dedicated to uniting and empowering the gaming community. Our platform is structured into three dynamic verticals: Game Development, Gamers, and esports, where you can connect, grow, and thrive in the gaming universe.
           </p>
         </div>
       </div>
@@ -149,7 +149,7 @@ function Question() {
         >
           <h1 className="ani-content text-4xl font-paladins">Excited right?!</h1>
           <p className="ani-content text-lg w-1/2">
-            Follow these steps to join the club right now
+            Follow these steps to join the community right now
           </p>
         </div>
         <div
